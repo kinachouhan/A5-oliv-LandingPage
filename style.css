@@ -443,19 +443,17 @@ header img {
 .box8{
    height: 100%;
    width: 100%;
-   position: relative;
-   overflow: hidden;
-   
 }
 
 .social{
-     display: flex;
+    display: flex;
     gap: 5px;
-    padding: 60px 0px;
     position: absolute;
-    bottom: -110px;
+    bottom: -10%;
+    right: 10%;
+     transition: bottom 1s ease;
+    
 }
-
 
 .social i{
     background-color: black;
@@ -465,14 +463,21 @@ header img {
     color: white;
 }
 
+.team-member:hover .social{
+    bottom: 6%;
+}
+
 .team-member{
     height: 85%;
     width: 100%;
+    position: relative;
+   overflow: hidden;
 }
 
-.box8:hover .social{
-    bottom: 10%;
-    right: 10%;
+.chris{
+    height: 100%;
+    width: 100%;
+    
 }
 
 .team-member img{
