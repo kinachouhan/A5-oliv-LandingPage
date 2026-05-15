@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    padding: 10px 110px;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    border-bottom: 1px solid rgb(236, 236, 236);
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+
+.lists h1 {
+    font-size: 18px;
+    font-weight: 450;
+    display: inline-block;
+    background-image: linear-gradient(black, black);
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 0.5s ease;
+}
+
+.lists h1:hover {
+    background-size: 100% 2px;
+}
+
+
+.lists button {
+    padding: 15px 20px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black;
+    font-size: 16px;
+}
+
+.lists button:hover {
+    background-color: black;
+    color: white;
+}
+
+.zero {
+    padding: 2px 8px;
+    background-color: #EDDED5;
+    border-radius: 50%;
+    text-align: center;
+}
+
+header img {
+    width: 6vw;
+}
+
+.logo {
+    display: flex;
+    gap: 30px;
+}
+
+.hiring {
+    padding: 5px 10px;
+    background-color: #EDDED5;
+    border-radius: 20px;
+    border: none;
+}
+
+.section-1 {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.section-1 h3 {
+    padding-top: 120px;
+    font-size: 110px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1;
+}
+
+.section-1 p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.section-1 button {
+    width: fit-content;
+    padding: 15px 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+
+.section-2 {
+    padding: 80px 0px;
+    height: 23%;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.scroller {
+    height: 100%;
+    display: flex;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.scroller img {
+    height: 100%;
+}
+
+@keyframes scroll {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translate(-100%);
+    }
+}
+
+.section-3 {
+    height: 75%;
+    width: 100%;
+}
+
+.top {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.part {
+    background-color: #F4F4F5;
+    height: 100%;
+    width: 100%;
+    padding: 80px 50px;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+}
+
+.part h2 {
+    font-size: 33px;
+    font-weight: 500;
+}
+
+.part p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(98, 97, 97);
+}
+
+.part h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.bottom {
+    padding: 100px 0px 30px 0px;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.bottom p {
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(55, 55, 55);
+}
+
+.work {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work h1 {
+    font-size: 65px;
+    font-weight: 300;
+}
+
+.work button {
+    padding: 14px 20px;
+    border-radius: 60px;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 0;
+    border: 1px solid black;
+    width: fit-content;
+}
+
+.work button:hover{
+    background-color: black;
+    color: white;
+}
+
+.section-4 {
+    height: 70%;
+    display: flex;
+    gap: 30px;
+}
+
+.images {
+    width: 49%;
+    height: 100%;
+}
+
+.img-box {
+    overflow: hidden;
+    height: 85%;
+    width: 100%;
+     display: inline-block;
+    
+}
+
+.img-box img {
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+    transition: transform 0.4s ease;
+    transition-delay: 0.3s;
+}
+
+
+.img-box:hover img {
+  transform: scale(1.2); 
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.content button {
+    background-color: transparent;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.content button:hover{
+    background-color: black;
+    color: white;
+}
+
+.content h2 {
+    font-weight: 300;
+}
+
+.section-5{
+    height: 68%;
+    padding: 80px 0px 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.box{
+    background-color: #EDDED5;
+    padding: 60px 50px;
+    gap: 35px;
+}
+
+.box1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F1F5F9;
+}
+
+.para{
+    font-size: 30px;
+    font-family: 100;
+}
+
+.btn{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 20%;
+    font-size: 15px;
+}
+
+.box1 button i{
+    font-size: 20px;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F1F6F5;
+    line-height: 1.5;
+   
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F8F8F8;
+    line-height: 1.5;
+}
+
+.box2 h5{
+    font-size: 24px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.box3 h5{
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.section-6{
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.box4{
+    background-color: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.box5{
+    background-color: #F8EDE3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.box6{
+    background-color: #FFFAE7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+
+.section-7{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.paragraph{
+    display: flex;
+    gap: 30px;
+}
+
+.container2 h1{
+     font-size: 60px;
+     font-weight: 200;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.paragraph p{
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(95, 95, 95);
+}
+
+.section-8{
+    height: 65%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+
+.box7{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #F1F6F5;
+}
+
+.box7 h2{
+    font-size: 35px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.join{
+    font-size: 18px;
+    line-height: 1.5;
+    color: gray;
+}
+
+.box8{
+   height: 100%;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+   
+}
+
+.social{
+     display: flex;
+    gap: 5px;
+    padding: 60px 0px;
+    position: absolute;
+    bottom: -110px;
+}
+
+
+.social i{
+    background-color: black;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+    color: white;
+}
+
+.team-member{
+    height: 85%;
+    width: 100%;
+}
+
+.box8:hover .social{
+    bottom: 10%;
+    right: 10%;
+}
+
+.team-member img{
+   height: 100%;
+   width: 100%;
+   display: block;
+}
+.box10{
+   height: 100%;
+   width: 100%
+}
+
+.team-member{
+    height: 85%;
+    width: 100%;
+}
+
+.team-member img{
+   height: 100%;
+   width: 100%;
+}
+
+.box9{
+   height: 100%;
+   width: 100%
+}
+
+.team-member{
+    height: 85%;
+    width: 100%;
+}
+
+.team-member img{
+   height: 100%;
+   width: 100%;
+}
+
+.section-9{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 1px solid rgb(224, 224, 224);
+    
+}
+
+.container3{
+    padding: 50px 0px 80px 0px;
+    display: flex;
+    gap: 120px;
+}
+
+.container3 img{
+    height: 50px;
+    width: 150px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text h2{
+    font-size: 35px;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+.text p{
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.section-10{
+    height: 80%;
+    width: 100%;
+    background-color: #F1F6F5;
+    display: flex;
+    padding: 100px;
+    gap: 200px;
+}
+
+.section-10 h1{
+    font-size: 70px;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+
+.container4 p{
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.container4 button{
+    padding: 15px 30px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+.section-11{
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.box10{
+    height: 100%;
+    width: 100%;
+}
+
+.box10 div{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.box10 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    transition-delay: 0.3s;
+}
+
+.box10 div:hover img {
+  transform: scale(1.2); 
+}
+
+
+.box10 h4{
+    padding: 15px 0px;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.5;
+}
+
+.box10 p{
+    padding: 10px 0px;
+    font-size: 18px;
+}
+
+.section-12{
+    padding: 80px 0px 120px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.section-12 h1{
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgb(218, 217, 217);
+}
+
+.section-12 li{
+    list-style: none;
+}
+
+.section-12 ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 0px;
+}
+
+.social-links{
+    display: flex;
+    gap: 5px;
+    padding: 60px 0px;
+
+}
+
+
+
+.social-links i{
+    background-color: #F0F8FF;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.box12 button{
+    background-color: black;
+    color: white;
+    padding: 20px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+}
+
+footer{
+    border-top: 1px solid rgb(220, 220, 220);
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-between;
+    color: gray;
+}
+
+footer div{
+    display: flex;
+    gap: 30px;
+}
+
+footer p span{
+    color: black;
+    text-decoration: underline;
+}
